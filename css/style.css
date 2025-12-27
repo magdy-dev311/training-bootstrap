@@ -137,3 +137,20 @@ nav .navbar-nav a:focus {
 .project {
     background-color: var(--dark-color);
 }
+
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input:focus {
+    outline: none;
+}
+
+.subscribe input::placeholder {
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}

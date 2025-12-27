@@ -19,43 +19,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="Images/logo.png" alt="Logo"></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
-                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation"><i
-                    class="fa-solid fa-bars"></i></button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto pe-2">
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link active" href="#">Home</a>
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link" href="#">Services</a>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#">Services</a>
                     </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link" href="#">Portfolio</a>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#">Portfolio</a>
                     </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#">About</a>
                     </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
                     </li>
                 </ul>
-
-                <div class="search ps-3 pe-3">
+                <div class="search ps-3 pe-3 d-none d-lg-block">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-
-                <a href="#" class="btn rounded-pill main-btn text-capitalize activee">Login</a>
+                <a class="btn rounded-pill main-btn activee" id="login-btn" href="#">Login</a>
             </div>
         </div>
     </nav>
 
-    <section class="landing d-flex justify-content-center align-items-center">
+    <section class=" p-2 landing d-flex justify-content-center align-items-center">
         <div class="text-center">
             <h1 class="display-1">Taste the Creativity</h1>
             <p class="mb-4 fs-6 text-white-50">We make awesome graphic and web design</p>
@@ -348,9 +347,9 @@
         <div class="container">
             <form class="row align-items-center">
                 <div class="col-md-6 col-lg-3">
-                    <div class="fw-bold fs-5 mb-sm-5 mb-md-3 mb-lg-0">Subscribe to our Newsletter:</div>
+                    <div class="fw-bold fs-5 mb-4 mb-md-3 mb-lg-0">Subscribe to our Newsletter:</div>
                 </div>
-                <div class="col-md-6 col-lg-7 mb-sm-5 mb-md-3 mb-lg-0">
+                <div class="col-md-6 col-lg-7 mb-4 mb-md-3 mb-lg-0">
                     <input class="w-100 border-0 border-bottom border-white p-2 bg-transparent text-white " type="email"
                         placeholder="Entre Your Email Address">
                 </div>
@@ -361,6 +360,82 @@
             </form>
         </div>
     </section>
+
+    <footer class="py-5 text-white-50 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="info mb-5">
+                        <img src="Images/logo.png" alt="" class="mb-4">
+                        <p class="mb-5">
+                            Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur
+                            sed, convallis at tellus.
+                        </p>
+                        <div class="copyright">
+                            created by <span>Grapgberry</span>
+                            <div class="">&copy; 2025 - <span>Bondi Inc</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light">Links</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Home</li>
+                            <li>Our Services</li>
+                            <li>Portfolio</li>
+                            <li>Testimonials</li>
+                            <li>Support</li>
+                            <li>Terms and Conditions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light">About Us</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Sign In</li>
+                            <li>Register</li>
+                            <li>About Us</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact">
+                        <h5 class="text-light">Contact Us</h5>
+                        <p class="lh-lg mt-3 mb-5">
+                            Get in touch with us via mail phone.We are waiting for your call or message
+                        </p>
+                        <a href="" class="btn main-btn rounded-pill w-100 activee">grapgberry@gmail.com</a>
+                        <ul class="d-flex list-unstyled mt-5 gap-3 justify-content-center">
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block text-light" href="#">
+                                    <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

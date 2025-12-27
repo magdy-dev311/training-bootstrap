@@ -6,6 +6,11 @@
     --section-color: #eff7fa;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }

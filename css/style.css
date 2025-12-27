@@ -1,0 +1,139 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    background-color: var(--dark-color);
+}
+
+nav .search {
+    border-left: 2px solid var(--green-color);
+}
+
+.fa-magnifying-glass {
+    color: var(--green-color) !important;
+}
+
+nav .navbar-nav a {
+    color: white;
+}
+
+nav .navbar-nav .active,
+nav .navbar-nav a:hover,
+nav .navbar-nav a:focus {
+    color: var(--green-color) !important;
+}
+
+.landing {
+    background-color: var(--dark-color);
+    color: white;
+    height: calc(100vh - 70px);
+}
+
+.started:hover,
+.login:hover {
+    color: var(--green-color) !important;
+}
+
+.above::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    height: 2px;
+    width: 120px;
+    transform: translateX(-50%);
+    background-color: #33d1cc;
+}
+
+.icons {
+    height: 200px;
+}
+
+.icons .one {
+    font-size: 12rem;
+    color: #EFF7FA;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icons .pencil {
+    font-size: 4rem;
+    color: #33d1cc;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.our-work {
+    background-color: var(--section-color);
+}
+
+.activee {
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+
+}
+
+.stuff .description {
+    max-width: 500px;
+
+}
+
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+}
+
+.team .box h4 {
+    background-color: var(--green-color);
+}
+
+.project {
+    background-color: var(--dark-color);
+}
